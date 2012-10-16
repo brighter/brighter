@@ -1,0 +1,25 @@
+YUI().use('transition', function (Y) {
+
+    var brighterNode = Y.one("#brighter");
+    
+    var circularTransition = function() {
+	
+	brighterNode.transition({
+	    textShadow : {
+		delay: 5,
+		duration: 0.75,
+		easing: 'linear',
+		value: "0px 0px 8px #fff"
+	    }
+	},function() {
+	    brighterNode.transition({
+		textShadow : {
+		    delay: 0,
+		    duration: 0.75,
+		    easing: 'linear',
+		    value: "none"
+		}
+	    }, circularTransition)
+	})
+    };
+});

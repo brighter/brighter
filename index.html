@@ -1,0 +1,407 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+<style>
+body {
+margin:0px;
+background: url("background.png") repeat;
+font-family:"Trebuchet MS";
+}
+.navoff {
+height:25px;
+width:100px;
+color:#fff;
+}
+.navon {
+width:600px;
+height:300px;
+}
+
+.pagebody {
+overflow:hidden;
+height:280px;
+}
+.logo-brighter {
+font-size:25pt;
+color:#fff;
+letter-spacing:5pt;
+margin-top:10px;
+text-shadow: 0px 0px 13px #fff
+}
+.logo-technologies {
+font-size:12px;
+font-family:"Trebuchet MS";
+color:#888;
+letter-spacing:5pt;
+margin-top:-18pt;
+margin-left:2pt;
+
+}
+#container {
+padding-top:14px;
+width:100%;
+height:70pt;
+background-image:-moz-linear-gradient(left,#000 0%,#222 80%);
+background-image:-webkit-linear-gradient(left,#000 0%,#222 80%);
+background-image:-o-linear-gradient(left,#000 0%,#222 80%);
+background:#000;
+border-bottom:1px solid #555;
+}
+.lightbulb {
+position:relative;
+top:-57pt;
+left:20pt;
+width:50pt;
+}
+
+#logo-text {
+margin-left:20pt;
+float:left;
+padding-left:100px;
+height:85px;
+margin-top:-6px;
+padding-top:8px;
+background:url("lightbulb2.png") 0px 0px  no-repeat;
+}
+
+#logo-text {
+margin-left:20pt;
+float:left;
+padding-left:80px;
+height:85px;
+margin-top:-6px;
+padding-top:8px;
+background:url("lightbulb3.png") 0px 12px  no-repeat;
+}
+.main-box1 {
+font-size:45pt;
+color:#fff;
+text-shadow:0px 0px 1px #eee;
+line-height:45pt;
+height:280px;
+background:url("image5.png") top right no-repeat;
+width:100%;
+}
+.main-box2 {
+background:url("image6.png") top right no-repeat;
+}
+.main-box3 {
+background:url("image7.png") top right no-repeat;
+}
+.main-box4 {
+background:url("image8.png") top right no-repeat;
+}
+.main-box5 {
+background:url("image9.png") top right no-repeat;
+}
+.main-box6 {
+background:url("image10.png") top right no-repeat;
+}
+.main-box7 {
+background:url("image11.png") top right no-repeat;
+}
+.footer {
+border-top:1px solid #444;
+border-bottom:1px solid #444;
+text-align:center;
+background:#999;
+height:270px;
+}
+.borderon {
+border-top:1px solid #444;
+}
+.infobox {
+padding:10px;
+border-left:1px solid #aaa;
+border-right:1px solid #555;
+color:#fff;
+height:250px;
+text-shadow:1px 1px 2px #999;
+}
+.infotitle {
+border-radius:10px;
+color:#fff;
+text-shadow:1px 1px 2px #999;
+font-size:30pt;
+}
+.page-footer {
+background:#444;
+height:50px;
+border-bottom:1px solid #555;
+border-top:1px solid #555;
+color:#ccc;
+font-size:10pt;
+text-align:right;
+padding-top:20px;
+padding-right:20px;
+}
+.slideshow {position: relative; overflow: hidden;}
+.slideHolder {position: relative; height:280px;}
+.slide { display: none; position: absolute; }
+.slide.current { display: block; }
+.inactive {color: #ccc; }
+#sitemapcontainer {
+float:right;
+text-align:right;
+height:30px;
+width:100%;
+margin-right:50px;
+padding:10px;
+margin-top:10px;
+overflow:visible;
+position:absolute;
+z-index:2;
+color:#fff;
+}
+#sitemap {
+float:right;
+position:relative;
+z-index:10000;
+margin-right:50px;
+padding:10px;
+margin-top:10px;
+overflow:hidden;
+border-radius:15px;
+border:4px solid #fff;
+background:#222 url("sitemap.png") top right no-repeat;
+cursor:default;
+box-shadow:6px 6px 10px #000;
+
+}
+#sitemap-detail hr {
+width:590px;
+position:relative;
+left:-6px;
+}
+
+#sitemap-detail {
+width:600px;
+text-align:left;
+padding-top:5px;
+color:#333;
+}
+.nav-topic-title {
+font-size:12pt;
+background:#259;
+padding:5px;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+color:#fff;
+}
+.nav-topic-title.orange {
+background:#f40;
+}
+.nav-topic-title.purple {
+background: #590;
+}
+.nav-topic-container {
+font-size:10pt;
+padding:5px;
+}
+
+.nav-topic-container.blue {
+background:#313841;
+
+background-image:-moz-linear-gradient(top,#313841,#1b1b1b);
+background-image:-moz-linear-gradient(top,#313841,#242424);
+background-image:-webkit-linear-gradient(top,#313841,#242424);
+background-image:-o-linear-gradient(top,#313841,#242424);
+background-image:linear-gradient(top,#313841,#242424);
+}
+.nav-topic-container.orange {
+background:#50352c;
+background-image:-moz-linear-gradient(top,#50352c,#1b1b1b);
+background-image:-moz-linear-gradient(top,#50352c,#242424);
+background-image:-webkit-linear-gradient(top,#50352c,#242424);
+background-image:-o-linear-gradient(top,#50352c,#242424);
+background-image:linear-gradient(top,#50352c,#242424);
+}
+.nav-topic-container.purple {
+background:#373f2d;
+background-image:-moz-linear-gradient(top,#373f2d,#242424);
+background-image:-webkit-linear-gradient(top,#373f2d,#242424);
+background-image:-o-linear-gradient(top,#373f2d,#242424);
+background-image:linear-gradient(top,#373f2d,#242424);
+}
+
+.nav-topic-container li a,
+.nav-topic-container li a:hover,
+.nav-topic-container li a:visited {
+text-decoration:none;
+color:#fff;
+
+}
+.nav-topic-container li a:hover {
+text-shadow:0px 0px 6px #fff;
+font-size:14px;
+}
+.nav-topic-container ul,
+.nav-topic-container li {
+list-style:none;
+margin:0px;
+padding:0px;
+}
+.nav-topic-container ul {
+height:200px;
+}
+.nav-topic-container li {
+border-bottom:1px dotted #666;
+margin-bottom:5px;
+padding-top:10px;
+padding-bottom:5px;
+}
+.yui3-u-1-4.darkgrey {
+background:#333;
+color:#fff;
+border-radius:5px;
+margin-right:10pt;
+width:140pt;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.6.0/build/cssgrids/grids-min.css">
+<script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
+</head>
+<body>
+<div id='sitemapcontainer'><div id='sitemap' class='navoff'>Navigate&nbsp;
+<div id='sitemap-detail'>
+<hr />
+<div class='yui3-g'>
+<div class='yui3-u-1-4 darkgrey'>
+<div class='nav-topic-title'>About Us</div>
+<div class='nav-topic-container blue'>
+<ul>
+<li><a href='/'>Our mission</a></li>
+<li><a href='/'>Our team</a></li>
+</ul>
+</div>
+</div>
+<div class='yui3-u-1-4 darkgrey'>
+<div class='nav-topic-title  orange'>Services</div>
+<div class='nav-topic-container orange'>
+<ul>
+<li><a href='/'>Bespoke Software</a></li>
+<li><a href='/'>Mobile Apps</a></li>
+<li><a href='/'>Data Management</a></li>
+<li><a href='/'>Cloud Solutions</a></li>
+</ul>
+</div>
+</div>
+<div class='yui3-u-1-4 darkgrey'>
+<div class='nav-topic-title  purple'>Latest News</div>
+<div class='nav-topic-container purple'>
+<ul>
+<li><a href='/'>News item 1</a></li>
+<li><a href='/'>Item 2 on the news</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='container'>
+<div id='logo-text'>
+<h1 id='brighter' class='logo-brighter'>BRIGHTER</h1>
+<h2 class='logo-technologies'>technologies</h2>
+</div>
+</div>
+<div class='slideshow'>
+<div class='slideHolder'>
+  <div class='slide main-box1'><div style='padding:80px'>The web just keeps<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getting better...</div></div>
+<div class='slide main-box1 main-box3'><div style='padding:80px'>thanks to...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the Hubmyster and his wonky 0s & 1s</div></div>
+<div class='slide main-box1 main-box4'><div style='padding:80px'>more credit...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to the Hubmyster</div></div>
+<div class='slide main-box1 main-box5'><div style='padding:80px'>add a bit of<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;electricity to the mix...</div></div>
+<div class='slide main-box1 main-box6'><div style='padding:80px'>mobile apps<br />&nbsp;&nbsp;&nbsp;&nbsp;connect to the cloud</div></div>
+<div class='slide main-box1 main-box7'><div style='padding:80px'>add some<br />&nbsp;&nbsp;&nbsp;&nbsp;computer geeks...</div></div>
+</div>
+</div>
+<div class='yui3-g pagebody' style='display:none'>
+<div class='yui3-u-7-12 borderon'>
+<div class='main-box1'>The web just keeps<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getting better...</div>
+</div>
+<div class='yui3-u-5-12 borderon'>
+<div class='main-box2'><img src='image3.png' style='width:600px;' /></div>
+</div>
+</div>
+
+<div class='yui3-g footer'>
+  <div class='yui3-u-1-4'><div class='infobox'><div class='infotitle'>Box 1</div>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</div></div>
+  <div class='yui3-u-1-4'><div class='infobox'><div class='infotitle'>Box 2</div>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</div></div>
+  <div class='yui3-u-1-4'><div class='infobox'><div class='infotitle'>Box 3</div>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.</div></div>
+  <div class='yui3-u-1-4'><div class='infobox'><div class='infotitle'>Box 4</div>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</div></div>
+</div>
+<div class='page-footer'>&copy;  Brighter Technologies Ltd. All material here within Copyright 2012</div>
+<script>
+YUI().use('anim','transition','gallery-slideshow-animated', function (Y) {
+
+    var brighterNode = Y.one("#brighter");
+    
+    var circularTransition = function() {
+	
+	brighterNode.transition({
+	    textShadow : {
+		delay: 5,
+		duration: 2,
+		easing: 'linear',
+		value: "0px 0px 16px #fff"
+	    }
+	},function() {
+	    brighterNode.transition({
+		textShadow : {
+		    delay: 3,
+		    duration: 1.5,
+		    easing: 'linear',
+		    value: "none"
+		}
+	    }, circularTransition)
+	})
+    };
+//    circularTransition();
+
+var slideShow = new Y.SlideshowAnimated({contentBox: Y.one(".slideshow"),pause_time: 5, duration: 3});
+slideShow.render();
+
+var showNav = function() {
+var anim = new Y.Anim({
+node: '#sitemap',
+to: {
+width: "590px",
+height: "300px"},
+easing:"easeOut"
+});
+
+anim.run();
+//Y.one("#sitemap").addClass("navon");
+
+};
+
+var hideNav = function() {
+var anim = new Y.Anim({
+node: '#sitemap',
+to: {
+width: "100px",
+height: "25px"
+}
+});
+anim.run();
+//Y.one("#sitemap").removeClass("navon");
+
+};
+
+Y.one("#sitemap").on("mouseover",showNav);
+Y.one("#sitemap").on("mouseout",hideNav);
+});
+</script>
+</body>
+</html>
