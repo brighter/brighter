@@ -7,7 +7,7 @@ app.use('/css', express.static(__dirname + '/css') );
 
 
 app.get('/', function(req,res) {
-	res.sendfile('simple.html');
+	res.sendfile('index2.html');
 	console.log("Sent simple.html");
 
 });
