@@ -12,7 +12,7 @@ body {
   height: 4000px;
   margin: 0px;
   font-family: "Trebuchet MS";
-  background: #bbb url("/img/apbackground.png") repeat; }
+  background: #bbb;}
 
 #header-container {
   position: fixed;
@@ -55,7 +55,9 @@ body {
   z-index: 1;
   top: 200px;
   width: 100%;
-  text-align: center; }
+  height:100%;
+  text-align: center;
+  background-image: url("/img/apbackground.png") repeat;  }
 
 #background-image {
   display: inline-block;
