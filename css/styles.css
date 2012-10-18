@@ -12,7 +12,7 @@ body {
   height: 4000px;
   margin: 0px;
   font-family: "Trebuchet MS";
-  background: #bbb; }
+  background: #bbb url("img/apbackground.png") repeat; }
 
 #header-container {
   position: fixed;
