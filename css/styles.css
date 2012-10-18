@@ -12,7 +12,7 @@ body {
   height: 4000px;
   margin: 0px;
   font-family: "Trebuchet MS";
-  background: #bbb;}
+  background: #bbb; }
 
 #header-container {
   position: fixed;
@@ -53,37 +53,16 @@ body {
 #background-container {
   position: fixed;
   z-index: 1;
-  top: 200px;
+  top: 105px;
   width: 100%;
-  height:100%;
+  height: 100%;
   text-align: center;
-  background-image: url("/img/apbackground.png") repeat;  }
+  padding-top:80px;
+  background: #555 url("/img/apbackground.png");}
 
 #background-image {
   display: inline-block;
   width: 80%; }
-
-#background-text {
-  margin-top: 3%;
-  text-align: left;
-  padding-left: 5%;
-  display: inline-block;
-  height: 100%;
-  text-shadow: 1px 1px 1px #999;
-  color: #b7b7b7;
-  position: relative;
-  top: -50px; }
-
-#background-container .brighter-text {
-  font-size: 900%;
-  letter-spacing: .2em;
-  font-weight: bold; }
-
-#background-container .technologies-text {
-  font-size: 300%;
-  letter-spacing: .68em;
-  line-height: .1em;
-  padding-left: 1%; }
 
 #cloud1 {
   position: relative;
