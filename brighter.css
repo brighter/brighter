@@ -9,8 +9,9 @@
     font: 18px; } }
 body {
   width: 100%;
+  max-width: 2000px;
   height: 4000px;
-  margin: 0px;
+  margin: 0px auto;
   font-family: "Trebuchet MS";
   background: #bbb; }
 

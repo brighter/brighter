@@ -14,15 +14,23 @@ body {
   font-family: "Trebuchet MS";
   background: #bbb;}
 
-#header-container {
-  position: fixed;
-  top: 0px;
+#header-outer-container {
+    width:100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    z-index: 999;
+    height: 90px;
+ }
+
+#header-inner-container {
+    padding-top: 14px;
+    height:90px;
   width: 100%;
+  max-width:1800px;
+  margin: 0 auto;
   background: #000;
-  text-align: center;
-  z-index: 999;
-  height: 90px;
-  padding-top: 14px; }
+}
 
 #header-content {
   max-width: 800px;
@@ -33,6 +41,7 @@ body {
   margin-left: 20pt;
   margin-top: -6px;
   padding-left: 80px;
+  height:80px;
   padding-top: 8px; }
 
 .logo-brighter {
@@ -53,15 +62,17 @@ body {
 #background-container {
   position: fixed;
   z-index: 1;
-  top: 200px;
   width: 100%;
   height:100%;
   text-align: center;
-  background-image: url("/img/apbackground.png") repeat;  }
+  background: url("/img/apbackground.png") repeat;  }
 
 #background-image {
+  padding-top:10%;
   display: inline-block;
-  width: 80%; }
+  width: 80%;
+  max-width:1600px;
+}
 
 #background-text {
   margin-top: 3%;
@@ -107,13 +118,16 @@ body {
   position: relative;
   z-index: 3; }
 
-#page-container {
+#page-outer-container {
+    position:fixed;
+    width:100%;
+    z-index:2;
+}
+#page-inner-container {
   margin: 0 auto;
-  margin-left: -10px;
-  margin-right: -10px;
   text-align: left;
-  position: fixed;
   width: 100%;
+  max-width:1800px;
   top: 104px;
   z-index: 2; }
 
@@ -122,6 +136,24 @@ body {
   font-size: 3em;
   color: #fff;
   text-shadow: 0px 0px 10px #999; }
+
+
+.powertitle.dark {
+    color: #fff;
+    text-shadow: 0px 0px 10px #999; }
+
+.powertitle.light {
+    color: #333;
+    text-shadow: 0px 0px 10px #ccc; }
+
+.slide {
+  position: absolute;
+  background: url("/img/background.png") repeat;
+  border-top: 1px solid #555;
+  margin-left: -10px;
+  width: 110%;
+  height: 500px;
+  box-shadow: 0px 10px 15px #000; }
 
 #slide1 {
   position: relative;
