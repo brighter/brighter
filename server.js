@@ -11,6 +11,11 @@ app.get('/', function(req,res) {
 	console.log("Sent index.html");
 
 });
+app.get('/bottle', function(req,res) {
+	res.sendfile('bottle.html');
+	console.log("Sent bottle.html");
+
+});
 
 // all other requests are handled by redirecting the browser back to the
 // root path and tacking on the URL's path as the fragment;
