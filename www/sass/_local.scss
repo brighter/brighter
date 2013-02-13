@@ -1,0 +1,272 @@
+$standoutColor:#ffbf00;
+$font-family:"Trebuchet MS",Tahoma, Helvetica,Sans-Serif;
+
+body {
+    width:1100px;
+    margin:0 auto;
+    font-family:$font-family;
+}
+.standout-color {
+    color: $standoutColor;
+}
+#logo-container {
+    position:relative;
+    top:12px;
+    left:25px;
+    height:90px;
+}
+.logo-position{
+
+    display:inline-block;
+    position:relative;
+    top:-20px;
+    left:15px;
+    text-align:center;
+}
+
+#logo-brighter {
+    font-size:1.8em;
+    font-weight:bold;
+
+    .letterspace {
+	letter-spacing:.2em;
+    }
+}
+#logo-software-solutions {
+    color:#ddd;
+    font-size:.7em;
+    font-weight:lighter;
+  
+    .letterspace {
+	letter-spacing:.5em;
+    }
+}
+
+#strapline-container {
+    position:relative;
+    top:-50px;
+    margin-right:40px;
+    font-style:italic;
+    font-weight:lighter;
+    text-align:right;
+}
+#strapline-message {
+    letter-spacing:.1em;
+}
+#strapline-contact {
+    position:relative;
+    color:#999;
+    top:6px;
+    font-size:.9em;
+    letter-spacing:.1em;
+}
+#header-container {
+color:#fff;
+width:100%;
+height:110px;
+background:#444;
+}
+
+
+
+#navigation-container {
+
+    background-color:#333;
+    color:#ddd;
+    font-size:.8em;
+    letter-spacing:.1em;
+    border-top:1px solid #999;
+    border-bottom:1px solid #667;
+    padding-left:20px;
+    
+    a {
+	height:20px;
+	text-decoration:none;
+	color:#ddd;
+	transition:color .6s;
+	-moz-transition:color .6s;
+	-webkit-transition:color .6s;
+	-o-transition:color .6s;
+
+    }
+    a:visited {
+	color:#ddd;	     
+    }
+    a:hover {
+	color:$standoutColor;
+    }
+    a.navon {
+	color:$standoutColor;
+    }
+    
+    ul{
+	list-style:none;
+	width:1050px;
+	height:34px;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+	
+	li {
+	    display: inline-block;
+	    *display: inline;
+	    zoom: 1;
+	    padding:11px;	    	    
+	}
+
+	li.navon {
+	    color:$standoutColor;
+	    background-repeat:no-repeat;
+	    background-position:center bottom;
+	    background-image:url("../img/navigation-pointer.png");
+	}
+
+	&:after {   
+	    content: '';
+	    width: 100%;
+	    display: inline-block;
+	    font-size: 0;
+	    line-height: 0
+	}
+    }
+}
+
+#section-power-message {
+
+    height:288px;
+    @include background-image(linear-gradient(#222222 35%, #3f3f3f 71%, #666666)); 
+    border-bottom:1px solid #fff;
+    font-weight:bold;
+    letter-spacing:.1em;
+
+    .fontsize1 {
+	font-size:1em;
+	
+    }
+    .fontsize2 {
+	font-size:2.6em;
+    }
+    .fontsize3 {
+	font-size:4.5em;
+    }
+}
+#section-main-content {
+    min-height:400px;
+    background:#ddd;
+    text-align:center;
+    color:#444;
+
+    .title {
+	font-size:2.8em;
+	font-weight:bold;
+	padding-top:60px;
+	padding-bottom:30px;
+    }
+
+    .subtitle {
+
+	font-size:1.6em;
+	padding-bottom:20px;
+	
+    }
+
+    .column .subtitle {
+	text-align:center;
+    }
+
+    p {
+	font-size:.8em;
+	line-height:1.5em;
+    }
+
+}
+
+#power-message-backup {
+    
+    color:#fff;
+    font-size:1.2em;    
+
+    .p1 {
+	position:relative;
+	top:44px;
+	left:115px;
+    }
+    .p2 {
+	position:relative;
+	top:124px;
+	left:0px;
+    }
+    .p3 {
+	position:relative;
+	top:124px;
+	left:15px;
+    }
+    
+    img {
+	position:relative;
+	top:40px;
+	left:-100px;
+	float:right;
+    }
+    
+}
+
+.column-container {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+    .column {
+	width:25%;
+	padding:40px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	
+    }
+    &:after {   
+	content: '';
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+    }
+}
+.forreflection {
+    z-index:2;
+    position:relative;
+}
+.reflection {
+    color:#595959;
+    opacity:1;
+    z-index:1;
+    top:76px;
+    left:0px;
+    position:absolute;
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+}
+
+#footer-container {
+    opacity:.5;
+
+    border-top:3px solid #777;
+    border-bottom:1px solid #ddd;
+    padding:40px;
+    font-family:arial,sans-serif,helvetica;
+    color:#555;
+    font-size:.7em;
+    letter-spacing:.1em;
+    line-height:1.5em;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+#copyright {
+    text-align:center;
+
+}
+#pageupdate {
+    text-align:right;
+    float:right;
+}

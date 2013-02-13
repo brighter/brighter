@@ -1,0 +1,10 @@
+-*- mode: compilation; default-directory: "/Users/admin/Development/brighter/www/sass/" -*-
+Compilation started at Sun Feb  3 19:37:07
+
+sass  '/Users/admin/Development/brighter/www/sass/_local.scss' '/Users/admin/Development/brighter/www/sass/_local.css'
+Syntax error: Undefined mixin 'background-image'.
+        on line 137 of /Users/admin/Development/brighter/www/sass/_local.scss, in `background-image'
+        from line 137 of /Users/admin/Development/brighter/www/sass/_local.scss
+  Use --trace for backtrace.
+
+Compilation exited abnormally with code 1 at Sun Feb  3 19:37:07
